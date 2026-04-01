@@ -1,0 +1,28 @@
+[project]
+name = "modelmesh"
+version = "0.1.0"
+description = "Terminal UI for orchestrating multiple coding agents"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "textual>=0.62.0",
+    "ptyprocess>=0.7",
+    "pyte>=0.8",
+    "platformdirs>=4.0",
+]
+
+[project.scripts]
+modelmesh = "modelmesh.main:main"
+mesh = "modelmesh.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "platformdirs>=4.9.4",
+    "ptyprocess>=0.7.0",
+    "pyte>=0.8.2",
+    "pytest>=9.0.2",
+]
