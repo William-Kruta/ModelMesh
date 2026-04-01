@@ -1,5 +1,7 @@
 # ModelMesh
 
+<img src="docs/images/model_mesh.png" alt="ModelMesh Home Page" width="900" />
+
 ModelMesh is a Textual-based terminal UI for running and switching between multiple coding-agent CLIs from one project workspace.
 
 It currently supports:
@@ -46,33 +48,33 @@ ModelMesh does not install agent CLIs for you.
 
 ## Supported Agents
 
-| Agent | Binary | Notes |
-| --- | --- | --- |
-| Claude Code | `claude` | Uses the default environment |
-| Codex | `codex` | Uses a writable isolated `HOME` and XDG runtime under `.modelmesh-runtime/` |
-| Gemini CLI | `gemini` | Uses the default environment |
-| Open Code | `opencode` | Uses writable isolated XDG runtime dirs under `.modelmesh-runtime/` |
-| OpenClaw | `openclaw` | Uses the default environment |
+| Agent       | Binary     | Notes                                                                       |
+| ----------- | ---------- | --------------------------------------------------------------------------- |
+| Claude Code | `claude`   | Uses the default environment                                                |
+| Codex       | `codex`    | Uses a writable isolated `HOME` and XDG runtime under `.modelmesh-runtime/` |
+| Gemini CLI  | `gemini`   | Uses the default environment                                                |
+| Open Code   | `opencode` | Uses writable isolated XDG runtime dirs under `.modelmesh-runtime/`         |
+| OpenClaw    | `openclaw` | Uses the default environment                                                |
 
 If a binary is not found on `PATH`, ModelMesh will show a system message instead of starting that session.
 
 ## Keyboard Shortcuts
 
-| Shortcut | Action |
-| --- | --- |
-| `F4` | Make terminal taller |
-| `F5` | Make terminal shorter |
-| `F6` | Open config editor |
-| `F7` | Start active agent session |
-| `F8` | Stop active agent session |
-| `F9` | Restart active agent session |
-| `Ctrl+R` | Select project root |
-| `Ctrl+L` | Clear terminal display |
-| `Ctrl+C` | Quit |
-| `PageUp` / Mouse wheel up | Scroll terminal up |
-| `PageDown` / Mouse wheel down | Scroll terminal down |
-| `Home` | Jump to top of terminal scrollback |
-| `End` | Jump to bottom/live terminal output |
+| Shortcut                      | Action                              |
+| ----------------------------- | ----------------------------------- |
+| `F4`                          | Make terminal taller                |
+| `F5`                          | Make terminal shorter               |
+| `F6`                          | Open config editor                  |
+| `F7`                          | Start active agent session          |
+| `F8`                          | Stop active agent session           |
+| `F9`                          | Restart active agent session        |
+| `Ctrl+R`                      | Select project root                 |
+| `Ctrl+L`                      | Clear terminal display              |
+| `Ctrl+C`                      | Quit                                |
+| `PageUp` / Mouse wheel up     | Scroll terminal up                  |
+| `PageDown` / Mouse wheel down | Scroll terminal down                |
+| `Home`                        | Jump to top of terminal scrollback  |
+| `End`                         | Jump to bottom/live terminal output |
 
 When an agent session is running, regular keys and common control/navigation keys are forwarded into the active PTY session.
 

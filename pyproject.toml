@@ -2,8 +2,30 @@
 name = "modelmesh"
 version = "0.1.0"
 description = "Terminal UI for orchestrating multiple coding agents"
+authors = [{ name = "William Kruta", email = "wjkruta@gmail.com" }]
 readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Terminals",
+]
+keywords = [
+    "tui",
+    "terminal-ui",
+    "agents",
+    "coding-agents",
+    "developer-tools",
+    "textual",
+    "pty",
+]
 dependencies = [
     "textual>=0.62.0",
     "ptyprocess>=0.7",
@@ -11,13 +33,15 @@ dependencies = [
     "platformdirs>=4.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/William-Kruta/ModelMesh"
+Repository = "https://github.com/William-Kruta/ModelMesh"
+Issues = "https://github.com/William-Kruta/ModelMesh/issues"
+
 [project.scripts]
 modelmesh = "modelmesh.main:main"
 mesh = "modelmesh.main:main"
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
@@ -26,3 +50,7 @@ dev = [
     "pyte>=0.8.2",
     "pytest>=9.0.2",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
